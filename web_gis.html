@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>60_Sanjit_Yadav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        const map = L.map('map').setView([26.882195, 86.019274], 10);
+
+        const baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        const overlayLayers = {};
+        const layerControl = L.control.layers({ "OSM": baseLayer }, overlayLayers).addTo(map);
+
+        const geojsonFiles = [
+            { path: 'Location_files.geojson', name: "Student's Location" },
+            { path: 'municipality.geojson', name: 'Municipality' },
+            { path: 'district.geojson', name: 'District' },
+            { path: 'province.geojson', name: 'Province' },
+            { path: 'schools.geojson', name: 'Schools' },
+            { path: 'Hospital.geojson', name: 'Hospital' }
+        ];
+
+        geojsonFiles.forEach(file => {
+            axios.get(file.path)
+                .then(response => {
+                    const layer = L.geoJSON(response.data, {
+                        style: { color: 'Green', weight: 2 },
+                        onEachFeature: (feature, layer) => {
+                            let popupContent = `<strong>${file.name}</strong><br>`;
+                            if (feature.properties) {
+                                for (let key in feature.properties) {
+                                    popupContent += `${key}: ${feature.properties[key]}<br>`;
+                                }
+                            }
+                            layer.bindPopup(popupContent);
+                        }
+                    });
+                    overlayLayers[file.name] = layer;
+                    layerControl.addOverlay(layer, file.name);
+                })
+                .catch(error => console.error(`Error loading ${file.name}:`, error));
+        });
+
+        const apiKey = '390cbfe18abeaf1b340bd54ef5436adf';
+        const lat = 26.4525;
+        const lon = 87.2718;
+
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`)
+            .then(response => {
+                const data = response.data;
+
+                const weatherPopup = `
+                    <strong>Weather Info</strong><br>
+                    Location: ${data.name}<br>
+                    Temperature: ${data.main.temp} °C<br>
+                    Condition: ${data.weather[0].description}
+                `;
+
+                const weatherMarker = L.marker([lat, lon]).addTo(map).bindPopup(weatherPopup).openPopup();
+
+                const weatherLabel = L.marker([lat, lon], {
+                    icon: L.divIcon({
+                        className: 'weather-label',
+                        html: `<div style='background:white;border:1px solid gray;padding:2px 5px;border-radius:4px;'>${data.main.temp} °C</div>`
+                    })
+                }).addTo(map);
+
+                overlayLayers['Weather Marker'] = weatherMarker;
+                overlayLayers['Weather Label'] = weatherLabel;
+                layerControl.addOverlay(weatherMarker, 'Weather Marker');
+                layerControl.addOverlay(weatherLabel, 'Weather Label');
+            })
+            .catch(error => console.error('Error fetching weather data:', error));
+    </script>
+</body>
+</html>

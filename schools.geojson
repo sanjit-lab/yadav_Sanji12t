@@ -1,0 +1,494 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-12-09T08:11:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/673308546",
+        "amenity": "school"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.9700494,
+              26.8718572
+            ],
+            [
+              85.9699528,
+              26.8716167
+            ],
+            [
+              85.9705764,
+              26.8714588
+            ],
+            [
+              85.9706931,
+              26.8717339
+            ],
+            [
+              85.9702398,
+              26.8718811
+            ],
+            [
+              85.9702089,
+              26.8718177
+            ],
+            [
+              85.9700494,
+              26.8718572
+            ]
+          ]
+        ]
+      },
+      "id": "way/673308546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/952373979",
+        "amenity": "school",
+        "name": "Pragatishil J.P. School",
+        "opening_hours": "6"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              86.0379012,
+              26.8838619
+            ],
+            [
+              86.0378697,
+              26.8836161
+            ],
+            [
+              86.0379877,
+              26.8835742
+            ],
+            [
+              86.038215,
+              26.8835162
+            ],
+            [
+              86.038437,
+              26.8834995
+            ],
+            [
+              86.0385288,
+              26.883512
+            ],
+            [
+              86.0385677,
+              26.8836514
+            ],
+            [
+              86.0385986,
+              26.8839128
+            ],
+            [
+              86.0385007,
+              26.8839343
+            ],
+            [
+              86.0383451,
+              26.8838745
+            ],
+            [
+              86.0381658,
+              26.8838524
+            ],
+            [
+              86.0381412,
+              26.8838494
+            ],
+            [
+              86.0379012,
+              26.8838619
+            ]
+          ]
+        ]
+      },
+      "id": "way/952373979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5315480524",
+        "amenity": "school",
+        "name:en": "Bhanu H.S. School",
+        "opening_hours": "Su-Fr 10:00-16:00",
+        "operator": "Govt."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0456327,
+          26.8699586
+        ]
+      },
+      "id": "node/5315480524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5315480526",
+        "amenity": "school",
+        "name:en": "Technical School",
+        "opening_hours": "Su-Fr 10:00-16:00",
+        "operator": "Govt."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0422324,
+          26.9054215
+        ]
+      },
+      "id": "node/5315480526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5315501723",
+        "amenity": "school",
+        "name:en": "Pragatishil J. P. School",
+        "opening_hours": "Su-Fr 10:00-16:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0381059,
+          26.8837299
+        ]
+      },
+      "id": "node/5315501723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6305408457",
+        "amenity": "school",
+        "name": "Durga School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9703739,
+          26.8716586
+        ]
+      },
+      "id": "node/6305408457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6305408464",
+        "amenity": "school",
+        "name": "Shri Sarada Secondary Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9712993,
+          26.8717985
+        ]
+      },
+      "id": "node/6305408464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793987183",
+        "amenity": "school",
+        "name": "Aadhabhut Vidyalaya",
+        "name:en": "Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0622787,
+          26.9048824
+        ]
+      },
+      "id": "node/9793987183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990037",
+        "amenity": "school",
+        "name": "Shree Rastriya Basic School",
+        "name:en": "Shree Rastriya Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.98806,
+          26.9092312
+        ]
+      },
+      "id": "node/9793990037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990038",
+        "amenity": "school",
+        "name": "Shree Janata Secondary School",
+        "name:en": "Shree Janata Secondary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9774399,
+          26.8915691
+        ]
+      },
+      "id": "node/9793990038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990039",
+        "amenity": "school",
+        "name": "Araniko English Boarding School",
+        "name:en": "Araniko English Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9860764,
+          26.9052696
+        ]
+      },
+      "id": "node/9793990039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990041",
+        "amenity": "school",
+        "name": "New Durga English Boarding School",
+        "name:en": "New Durga English Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.977829,
+          26.8902855
+        ]
+      },
+      "id": "node/9793990041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990081",
+        "amenity": "school",
+        "name": "Shree Rastriya Basic School",
+        "name:en": "Shree Rastriya Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0034866,
+          26.9021797
+        ]
+      },
+      "id": "node/9793990081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990082",
+        "amenity": "school",
+        "name": "Rastriya Basic School",
+        "name:en": "Rastriya Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.00177,
+          26.917284
+        ]
+      },
+      "id": "node/9793990082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9793990084",
+        "amenity": "school",
+        "name": "Piyush Shiksha Sadan",
+        "name:en": "Piyush Shiksha Sadan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.0016937,
+          26.9140625
+        ]
+      },
+      "id": "node/9793990084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007047",
+        "amenity": "school",
+        "name": "Shree Janak Lali English Boarding School",
+        "name:en": "Shree Janak Lali English Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.994339,
+          26.8862991
+        ]
+      },
+      "id": "node/9794007047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007048",
+        "amenity": "school",
+        "name": "Shree Secondary School",
+        "name:en": "Shree Secondary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9947357,
+          26.889185
+        ]
+      },
+      "id": "node/9794007048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007049",
+        "amenity": "school",
+        "name": "Shree Rastriya Basic School",
+        "name:en": "Shree Rastriya Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9995422,
+          26.871563
+        ]
+      },
+      "id": "node/9794007049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007050",
+        "amenity": "school",
+        "name": "Crimson English Boarding School",
+        "name:en": "Crimson English Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9938889,
+          26.8897629
+        ]
+      },
+      "id": "node/9794007050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007059",
+        "amenity": "school",
+        "name": "Shree Secondry School",
+        "name:en": "Shree Secondry School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9931335,
+          26.8598537
+        ]
+      },
+      "id": "node/9794007059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007060",
+        "amenity": "school",
+        "name": "Shree Janata Basic School",
+        "name:en": "Shree Janata Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9984894,
+          26.8433285
+        ]
+      },
+      "id": "node/9794007060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007061",
+        "amenity": "school",
+        "name": "Anand Marg School",
+        "name:en": "Anand Marg School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9916077,
+          26.8587818
+        ]
+      },
+      "id": "node/9794007061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007062",
+        "amenity": "school",
+        "name": "Gurukul English Boarding School",
+        "name:en": "Gurukul English Boarding School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9996109,
+          26.8423023
+        ]
+      },
+      "id": "node/9794007062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9794007065",
+        "amenity": "school",
+        "name": "Shree Durga Tulsi Basic School",
+        "name:en": "Shree Durga Tulsi Basic School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.9702454,
+          26.8717403
+        ]
+      },
+      "id": "node/9794007065"
+    }
+  ]
+}
